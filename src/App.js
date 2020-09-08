@@ -5,6 +5,7 @@ import {
     Route,
 } from "react-router-dom";
 import './App.css';
+import LandingPage from './Components/LandingPage';
 import Navbar from './Components/Navbar/Navbar'
 import Hworks from './Components/Hworks/Hworks'
 import Footer from './Components/Footer/Footer';
@@ -14,12 +15,12 @@ const App = () => {
 return (
  <Router>
   <div className="App">
-    <header className="App-header">
+   {/* <header className="App-header">
       <Navbar/>
-    </header>
+    </header>*/}
     <Switch>
       <Route exact path ="/">
-        <Hworks/>
+        <LandingPage/>
       </Route>
       <Route path ="/how-it-works">
         <Hworks/>
@@ -36,8 +37,8 @@ return (
         <Sample/>
       </Route>
     </Switch>
-    <Footer/>
-  </div>
+{/*    <Footer/>
+*/}  </div>
  </Router>
     );
 
