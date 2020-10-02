@@ -9,6 +9,7 @@ import Navbar from './Components/Navbar/Navbar'
 import Hworks from './Components/Hworks/Hworks'
 import Footer from './Components/Footer/Footer'
 import Report from './Components/Report/Report'
+import Dashboard from './Components/Dashboard/Dashboard'
 
 
 const App = () => {
@@ -30,7 +31,7 @@ return (
         <Sample/>
       </Route>
       <Route path="/home">
-        <Sample/>
+        <Dashboard/>
       </Route>
       <Route path="/login">
         <Sample/>
