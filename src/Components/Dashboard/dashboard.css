@@ -1,0 +1,30 @@
+.dashboard{
+         flex: 1 1 auto;
+         display: flex;
+         height: 100%;
+}
+.dashmenu{
+		background-color: #282c34;
+		width: 300px;
+		padding-top: 50px;
+
+}
+.dashbutton{
+	background-color: #292929;
+	color: #fff;
+	border: 1px solid gray;
+	padding: 20px;	
+	cursor: pointer;
+}
+.dashbutton li{list-style: none; padding: 5px;}
+
+.dashicon{
+	color: gray;
+	width: 30px;
+	padding: 10px;
+}
+.dashbutton i{
+		font-size: 1.5em;
+}
+
+#red{color: red} #yellow{color: yellow}#green{color: green}

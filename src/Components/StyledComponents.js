@@ -121,6 +121,16 @@ outline:0;
 		border-color:#b938ff;
 	}
 `
+const CollapsedDiv = styled.div`
+	padding-left: 45px;	
+	display: ${props=>props.collapsed===true?"none":"block"};
+  	overflow: hidden;
+	cursor: default;
+	i{
+	font-size: 13px;
+}
+
+  	`
 
 const Card = styled.div `
 	text-align: center;
@@ -171,7 +181,7 @@ const FooterDiv = styled.div `
 	display: flex;
  	justify-content: center;
   	align-items: center;
-	background-color: #292929;
+	background-color: #282c34;
 	color: #fff;
 	height: 70px; 
 	position: absolute;
@@ -180,4 +190,5 @@ const FooterDiv = styled.div `
     margin:0 auto;
 `
 
-export { Navs, Navlist, SButton, ReportCard, LabelDiv, CommentBox, Card, Circle, FooterDiv };
+export { Navs, Navlist, SButton, ReportCard, 
+	LabelDiv, CommentBox, CollapsedDiv, Card, Circle, FooterDiv };
